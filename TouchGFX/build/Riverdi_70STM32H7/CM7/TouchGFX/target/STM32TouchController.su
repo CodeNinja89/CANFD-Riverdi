@@ -1,0 +1,5 @@
+CM7/TouchGFX/target/STM32TouchController.hpp:38:7:STM32TouchController::~STM32TouchController()	0	static
+CM7/TouchGFX/target/STM32TouchController.cpp:35:6:virtual void STM32TouchController::init()	8	static
+CM7/TouchGFX/target/STM32TouchController.cpp:54:6:virtual bool STM32TouchController::sampleTouch(int32_t&, int32_t&)	48	static
+CM7/TouchGFX/target/STM32TouchController.hpp:38:7:virtual STM32TouchController::~STM32TouchController()	8	static
+CM7/TouchGFX/target/STM32TouchController.cpp:105:6:void HAL_GPIO_EXTI_Callback(uint16_t)	0	static

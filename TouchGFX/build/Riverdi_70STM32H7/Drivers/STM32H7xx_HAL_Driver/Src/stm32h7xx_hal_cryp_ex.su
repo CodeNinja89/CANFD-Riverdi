@@ -1,0 +1,2 @@
+Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cryp_ex.c:111:19:HAL_CRYPEx_AESGCM_GenerateAuthTAG	24	static
+Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cryp_ex.c:277:19:HAL_CRYPEx_AESCCM_GenerateAuthTAG	40	static

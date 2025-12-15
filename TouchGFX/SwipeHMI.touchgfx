@@ -1,0 +1,288 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Screen1",
+        "Components": [
+          {
+            "Type": "SwipeContainer",
+            "Name": "swipeContainer1",
+            "Width": 1280,
+            "Height": 800,
+            "SwipeCutoff": 50,
+            "ShowPageIndicator": true,
+            "PageIndicatorX": 610,
+            "PageIndicatorY": 750,
+            "CenteredX": true,
+            "IndicatorImageNormal": "__generated\\alternate_theme_images_widgets_swipecontainer_medium_off_normal.png",
+            "IndicatorImageHighlight": "__generated\\alternate_theme_images_widgets_swipecontainer_medium_on_active.png",
+            "EndSwipeElasticWidth": 50,
+            "SelectedPage": "info",
+            "Preset": "alternate_theme\\presets\\swipecontainer\\medium_active.json",
+            "Components": [
+              {
+                "Type": "Container",
+                "Name": "start",
+                "Width": 1280,
+                "Height": 800,
+                "IsCacheableContainer": true,
+                "Components": [
+                  {
+                    "Type": "Image",
+                    "Name": "image2",
+                    "X": 128,
+                    "Y": 100,
+                    "Width": 1024,
+                    "Height": 600,
+                    "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_1024x600_puzzle.png"
+                  },
+                  {
+                    "Type": "AnalogClock",
+                    "Name": "analogClock",
+                    "X": 520,
+                    "Y": 328,
+                    "Width": 240,
+                    "Height": 240,
+                    "FileNameBackground": "__generated\\alternate_theme_images_widgets_analogclock_backgrounds_small_glossy_gradient.png",
+                    "RotationCenterX": 120,
+                    "RotationCenterY": 120,
+                    "Preset": "alternate_theme\\presets\\analogclock\\small_glossy_gradient.json",
+                    "UseAnimation": true,
+                    "Easing": "Back",
+                    "EasingOption": "Out",
+                    "ClockHands": [
+                      {
+                        "Type": "HourClockHand",
+                        "FileNameHandImage": "__generated\\alternate_theme_images_widgets_analogclock_hands_small_hour_glossy_gradient.png",
+                        "RotationCenterX": 9,
+                        "RotationCenterY": 69
+                      },
+                      {
+                        "Type": "MinuteClockHand",
+                        "FileNameHandImage": "__generated\\alternate_theme_images_widgets_analogclock_hands_small_minute_glossy_gradient.png",
+                        "RotationCenterX": 10,
+                        "RotationCenterY": 87
+                      },
+                      {
+                        "Type": "SecondClockHand",
+                        "FileNameHandImage": "__generated\\alternate_theme_images_widgets_analogclock_hands_small_second_glossy_gradient.png",
+                        "RotationCenterX": 2,
+                        "RotationCenterY": 100
+                      }
+                    ],
+                    "InitialHour": 10,
+                    "InitialMinute": 10
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "image1",
+                    "X": 320,
+                    "Y": 180,
+                    "Width": 640,
+                    "Height": 88,
+                    "RelativeFilename": "BET MOTORS LOGO landscape_M.png"
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "info",
+                "Width": 1280,
+                "Height": 800,
+                "Components": [
+                  {
+                    "Type": "Image",
+                    "Name": "image3",
+                    "X": 128,
+                    "Y": 100,
+                    "Width": 1024,
+                    "Height": 600,
+                    "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_1024x600_poly.png"
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textArea1",
+                    "X": 506,
+                    "Y": 174,
+                    "Width": 411,
+                    "Height": 41,
+                    "TextId": "__SingleUse_HQDD",
+                    "TextRotation": "0",
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "steering",
+                    "X": 350,
+                    "Y": 148,
+                    "Width": 100,
+                    "Height": 100,
+                    "RelativeFilename": "turn-left_724999.png"
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "center",
+                    "X": 637,
+                    "Y": 258,
+                    "Width": 7,
+                    "Height": 197,
+                    "RelativeFilename": "center.png"
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "image7",
+                    "X": 540,
+                    "Y": 481,
+                    "Width": 200,
+                    "Height": 200,
+                    "RelativeFilename": "steering.png"
+                  },
+                  {
+                    "Type": "AnimatedImage",
+                    "Name": "leftLane",
+                    "X": 400,
+                    "Y": 258,
+                    "Width": 87,
+                    "Height": 207,
+                    "FileNameFirst": "leftLane.png",
+                    "FileNameLast": "leftLane_warning.png",
+                    "UpdateTicksInterval": 1000,
+                    "StartOnLoad": true,
+                    "ReverseEnabled": true,
+                    "LoopEnabled": true
+                  },
+                  {
+                    "Type": "AnimatedImage",
+                    "Name": "rightLane",
+                    "X": 786,
+                    "Y": 258,
+                    "Width": 87,
+                    "Height": 207,
+                    "FileNameFirst": "rightLane.png",
+                    "FileNameLast": "rightLane_warning.png",
+                    "UpdateTicksInterval": 1000,
+                    "StartOnLoad": true,
+                    "LoopEnabled": true
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textAreaMotRPM",
+                    "X": 558,
+                    "Y": 124,
+                    "Width": 165,
+                    "Height": 24,
+                    "TextId": "MotoRPMId",
+                    "TextRotation": "0",
+                    "Wildcard1": {
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "entertainment",
+                "Width": 1280,
+                "Height": 800,
+                "Components": [
+                  {
+                    "Type": "Image",
+                    "Name": "image8",
+                    "X": 128,
+                    "Y": 100,
+                    "Width": 1024,
+                    "Height": 600,
+                    "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_1024x600_lines.png"
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textArea2",
+                    "X": 548,
+                    "Y": 465,
+                    "Width": 179,
+                    "Height": 24,
+                    "TextId": "__SingleUse_SXFN",
+                    "TextRotation": "0",
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "ToggleButton",
+                    "Name": "toggleButton1",
+                    "X": 557,
+                    "Y": 370,
+                    "Width": 170,
+                    "Height": 60,
+                    "Pressed": "__generated\\alternate_theme_images_widgets_togglebutton_large_round_text_on_light.png",
+                    "Released": "__generated\\alternate_theme_images_widgets_togglebutton_large_round_text_off_normal.png"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "SwipeHMI",
+    "Resolution": {
+      "Width": 1280,
+      "Height": 800
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Screen1",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "24": "LCD24bpp",
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 1280,
+        "Height": 800
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "PostGenerateTargetCommandOverride": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../../gcc/Makefile clean && make -f ../../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32H7",
+    "SubFamily": "STM32H747/757",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m7",
+    "ProjectFile": "../../Riverdi_121STM32H7_1_6.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "Video"
+    ]
+  },
+  "Version": "4.26.0",
+  "CreatedBy": "4.26.0"
+}
