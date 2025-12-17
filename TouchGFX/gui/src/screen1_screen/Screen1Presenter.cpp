@@ -17,7 +17,7 @@ void Screen1Presenter::deactivate()
 
 }
 
-void Screen1Presenter::update_value(disp_data_struct disp_val)
+void Screen1Presenter::update_value(uint32_t disp_val)
 {
 	view.update_value(disp_val);
 }

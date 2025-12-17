@@ -75,12 +75,12 @@ const osThreadAttr_t VideoTask_attributes = {
  * creation mechanism
  */
 
-osThreadId_t canComHandle;
-const osThreadAttr_t canComTaskAttr = {
-		.name = "CanBusTask",
-		.stack_size = 8192 * 4,
-		.priority = (osPriority_t) osPriorityNormal,
-};
+//osThreadId_t canComHandle;
+//const osThreadAttr_t canComTaskAttr = {
+//		.name = "CanBusTask",
+//		.stack_size = 8192 * 4,
+//		.priority = (osPriority_t) osPriorityNormal,
+//};
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -159,7 +159,7 @@ void MX_FREERTOS_Init(void) {
   VideoTaskHandle = osThreadNew(videoTaskFunc, NULL, &VideoTask_attributes);
 
   /* creation of CAN Comm handler */
-  canComHandle = osThreadNew(can_receive_batt_proc, NULL, &canComTaskAttr);
+  //canComHandle = osThreadNew(can_receive_batt_proc, NULL, &canComTaskAttr);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */

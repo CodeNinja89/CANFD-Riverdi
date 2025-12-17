@@ -154,6 +154,12 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(FDCAN1_STB_GPIO_Port, &GPIO_InitStruct);
 
+  GPIO_InitStruct.Pin = USR_LED_1_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP; // Push-Pull Output
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(USR_LED_1_GPIO_Port, &GPIO_InitStruct);
+
   /* EXTI interrupt init*/
   HAL_NVIC_SetPriority(EXTI3_IRQn, 7, 0);
   HAL_NVIC_EnableIRQ(EXTI3_IRQn);

@@ -1,0 +1,13 @@
+CM7/Core/Src/quadspi.c:78:6:MX_QUADSPI_Init	8	static
+CM7/Core/Src/quadspi.c:107:6:HAL_QSPI_MspInit	64	static
+CM7/Core/Src/quadspi.c:164:6:HAL_QSPI_MspDeInit	8	static
+CM7/Core/Src/quadspi.c:306:9:QSPI_WriteEnable	88	static
+CM7/Core/Src/quadspi.c:447:1:CSP_QSPI_EnableMemoryMappedMode	72	static
+CM7/Core/Src/quadspi.c:573:1:QSPI_AutoPollingMemReady_Quad	88	static
+CM7/Core/Src/quadspi.c:198:1:CSP_QSPI_EraseSector	72	static
+CM7/Core/Src/quadspi.c:245:9:QSPI_Enter4Bytes	64	static
+CM7/Core/Src/quadspi.c:348:1:QSPI_ResetChip	80	static
+CM7/Core/Src/quadspi.c:478:1:CSP_QSPI_WriteMemory	80	static
+CM7/Core/Src/quadspi.c:608:1:CSP_QSPI_Erase_Chip	64	static
+CM7/Core/Src/quadspi.c:696:9:QSPI_DummyCyclesCfg	72	static
+CM7/Core/Src/quadspi.c:651:1:CSP_QUADSPI_Init	64	static

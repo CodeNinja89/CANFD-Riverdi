@@ -40,9 +40,9 @@ void Screen1View :: handleTickEvent()
 	}
 }
 
-void Screen1View::update_value(disp_data_struct disp_val)
+void Screen1View::update_value(uint32_t disp_val)
 {
-	Unicode::snprintf(textAreaMotRPMBuffer, 10, "%d", disp_val.mot_rpm);
+	Unicode::snprintf(textAreaMotRPMBuffer, 10, "%d", disp_val);
 	// Unicode::strncpy(textAreaMotRPM, "TouchGFX", 1200);
 	textAreaMotRPM.invalidate();
 }

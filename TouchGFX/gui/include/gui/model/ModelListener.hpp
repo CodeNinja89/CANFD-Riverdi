@@ -10,7 +10,7 @@ public:
     ModelListener() : model(0) {}
     
     virtual ~ModelListener() {}
-    virtual void update_value(disp_data_struct disp_val) {}
+    virtual void update_value(uint32_t disp_val) {}
 
     void bind(Model* m)
     {

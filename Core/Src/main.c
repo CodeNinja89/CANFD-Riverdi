@@ -82,7 +82,39 @@ void MX_FREERTOS_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+static void FDCAN_SendTestFrame(void)
+{
+    FDCAN_TxHeaderTypeDef txh = {0};
+    uint8_t txd[8] = {0};
 
+    txh.Identifier = 0x123;
+    txh.IdType = FDCAN_STANDARD_ID;
+    txh.TxFrameType = FDCAN_DATA_FRAME;
+    txh.DataLength = FDCAN_DLC_BYTES_8;
+    txh.ErrorStateIndicator = FDCAN_ESI_ACTIVE;
+    txh.BitRateSwitch = FDCAN_BRS_OFF;
+    txh.FDFormat = FDCAN_CLASSIC_CAN;
+    txh.TxEventFifoControl = FDCAN_NO_TX_EVENTS;
+    txh.MessageMarker = 0;
+
+    txd[0] = 0xDE;
+    txd[1] = 0xAD;
+    txd[2] = 0xBE;
+    txd[3] = 0xEF;
+    txd[4] = 1;
+    txd[5] = 2;
+    txd[6] = 3;
+    txd[7] = 4;
+
+    HAL_StatusTypeDef st = HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan1, &txh, txd);
+
+    if (st == HAL_OK) {
+        HAL_GPIO_TogglePin(USR_LED_1_GPIO_Port, USR_LED_1_Pin); // queued OK
+    } else {
+        // queued failed (Tx FIFO full / not started / etc.)
+    	HAL_GPIO_TogglePin(USR_LED_1_GPIO_Port, USR_LED_1_Pin);
+    }
+}
 /* USER CODE END 0 */
 
 /**
@@ -143,7 +175,8 @@ int main(void)
   MX_DAC1_Init();
   MX_DMA2D_Init();
   MX_FDCAN1_Init();
-  MX_FDCAN2_Init();
+  // MX_FDCAN2_Init();
+  FDCAN_SendTestFrame();
   MX_SPI1_Init();
   MX_TIM1_Init();
   MX_TIM5_Init();

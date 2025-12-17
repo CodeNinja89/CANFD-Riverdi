@@ -6,8 +6,6 @@
 uint32_t tick_count = 0;
 uint32_t mot_rpm = 0;
 
-disp_data_struct disp_val;
-
 Model::Model() : modelListener(0)
 {
 
@@ -16,10 +14,20 @@ Model::Model() : modelListener(0)
 void Model::tick()
 {
 	// memcpy(&disp_val, &disp_data_struct, sizeof(disp_data_struct));
-	// update_value();
+	// disp_val = disp_data;
+//	tick_count++;
+//	if(tick_count % 100 == 0) tick_count = 0;
+//	modelListener->update_value(tick_count);
+
+	uint32_t v;
+	if (CANValue_Get(&v))
+	{
+		modelListener->update_value(v);   // we’ll add this hook
+	}
 }
 
 void Model::update_value()
 {
-	modelListener->update_value(disp_val);
+//	disp_val = disp_data;
+//	modelListener->update_value(disp_val);
 }

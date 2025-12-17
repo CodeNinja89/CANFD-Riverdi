@@ -1,0 +1,8 @@
+CM7/Core/Src/fdcan.c:31:6:CANValue_SetFromISR	0	static
+CM7/Core/Src/fdcan.c:36:9:CANValue_Get	0	static
+CM7/Core/Src/fdcan.c:51:6:MX_FDCAN1_Init	96	static
+CM7/Core/Src/fdcan.c:155:6:HAL_FDCAN_MspInit	56	static
+CM7/Core/Src/fdcan.c:241:6:HAL_FDCAN_MspDeInit	8	static
+CM7/Core/Src/fdcan.c:299:6:HAL_FDCAN_RxFifo0Callback	112	static
+CM7/Core/Src/fdcan.c:321:6:HAL_FDCAN_TxBufferCompleteCallback	0	static
+CM7/Core/Src/fdcan.c:327:6:HAL_FDCAN_ErrorCallback	0	static

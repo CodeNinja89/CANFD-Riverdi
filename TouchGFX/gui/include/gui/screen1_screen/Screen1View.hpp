@@ -13,7 +13,7 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
     virtual void handleTickEvent();
-    virtual void update_value(disp_data_struct disp_val);
+    virtual void update_value(uint32_t disp_val);
     virtual void update_value_tick(uint16_t);
 protected:
     int tickCounter;
